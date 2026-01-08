@@ -3,7 +3,8 @@ import os
 
 
 def main():
-    """Создает единый TXT файл"""
+
+    "Создает единый TXT файл"
 
     # Файлы
     csv_file = "web_clients_correct.csv"
@@ -46,7 +47,7 @@ def main():
 
             # Устройство
             device_text = {
-                'mobile': 'мобильного',
+                "mobile": 'мобильного',
                 'tablet': 'планшета',
                 'laptop': 'ноутбука',
                 'desktop': 'компьютера'
@@ -64,10 +65,10 @@ def main():
 
             # Прогресс
             if i % 100 == 0:
-                print(f"  Записано: {i}/{len(customers)}")
+                print(f"Записано: {i}/{len(customers)}")
 
-    print(f"✅ Создан единый TXT-файл: {txt_file}")
-    print(f"   Записано описаний: {len(customers)}")
+    print(f"Создан единый TXT-файл: {txt_file}")
+    print(f"Записано описаний: {len(customers)}")
 
 
 # Запуск
