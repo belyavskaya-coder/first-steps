@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Файлы на Диске</title>
+  <style>
+    .uploaded {
+      background-color: rgba(0, 200, 0, 0.25);
+    }
+  </style>
+</head>
+<body>
+  <h2>Мои файлы</h2>
+  <ul>
+    {% for file in files %}
+      <li {% if file in uploaded_files %}class="uploaded"{% endif %}>
+        {{ file }}
+      </li>
+    {% endfor %}
+  </ul>
+  <p><small>Зелёный фон — файл уже загружен на Яндекс.Диск.</small></p>
+</body>
+</html>
